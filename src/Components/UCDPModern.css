@@ -1,0 +1,121 @@
+/* UCDPModern.css */
+
+.ucdp-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 32px 24px 24px 24px;
+}
+
+.ucdp-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 18px;
+}
+
+.ucdp-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  color: #2a4365;
+}
+
+.ucdp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  background: #f9fbfd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ucdp-table th, .ucdp-table td {
+  padding: 10px 8px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ucdp-table th {
+  background: #e3eefd;
+  color: #2a4365;
+  font-weight: 600;
+}
+
+.ucdp-table tr:last-child td {
+  border-bottom: none;
+}
+
+.ucdp-input {
+  width: 90%;
+  padding: 6px 8px;
+  border: 1px solid #bcd0e5;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9fbfd;
+  transition: border 0.2s;
+}
+
+.ucdp-input:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+.ucdp-btn {
+  background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+}
+
+.ucdp-btn:disabled {
+  background: #bcd0e5;
+  cursor: not-allowed;
+}
+
+.ucdp-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #2563eb 0%, #4299e1 100%);
+}
+
+.ucdp-result-card {
+  background: #e6fffa;
+  border: 1px solid #b2f5ea;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.ucdp-error {
+  color: #e53e3e;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .ucdp-container {
+    padding: 12px 4px;
+  }
+  .ucdp-header {
+    font-size: 1.3rem;
+  }
+  .ucdp-table th, .ucdp-table td {
+    padding: 6px 2px;
+    font-size: 0.95rem;
+  }
+} 
